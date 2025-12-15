@@ -12,3 +12,9 @@
   background-repeat: no-repeat;
 }
 
+.img-card {
+  height: 180px;        /* altura máxima */
+  object-fit: contain; /* o cover */
+}
+
+
