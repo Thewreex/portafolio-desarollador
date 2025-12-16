@@ -558,6 +558,7 @@
         <div class="row g-4 align-items-start">
           <!-- Formulario -->
           <div class="col-12 col-md-6">
+            <div id="alerta"></div>
             <form>
               <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
@@ -574,7 +575,7 @@
                 <textarea class="form-control" id="mensaje" rows="5"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary w-100">
+              <button type="button" onclick="botonAccionado()" class="btn btn-primary w-100">
                 Enviar
               </button>
             </form>
@@ -618,5 +619,6 @@
 
     <script src="scripts/navbar.js"></script>
     <script src="scripts/modoNoche.js"></script>
+    <script src="scripts/verificadorContacto.js"></script>
   </body>
 </html>
