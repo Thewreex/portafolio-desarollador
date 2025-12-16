@@ -10,6 +10,12 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -541,50 +547,59 @@
     </section>
 
     <section class="mt-5">
-      <h1 class="text-center">Contacto</h1>
+  <div class="container">
+    <h1 class="text-center mb-4">Contacto</h1>
 
-      <div class="container-fluid d-flex justify-content-center">
-        <div class="col-10">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-              <div id="emailHelp" class="form-text">
-                We'll never share your email with anyone else.
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Password</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div class="mb-3 form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Check me out</label
-              >
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+    <div class="row g-4 align-items-start">
+      <!-- Formulario -->
+      <div class="col-12 col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" />
+          </div>
+
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" />
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Links -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 h-100">
+          <h4 class="mb-3">Mis redes de contacto </h4>
+<ul class="list-unstyled mb-0">
+  <li class="mb-3 d-flex align-items-center">
+    <i class="bi bi-github me-2 fs-4"></i>
+    <a href="#" class="text-decoration-none">GitHub</a>
+  </li>
+
+  <li class="mb-3 d-flex align-items-center">
+    <i class="bi bi-envelope-fill me-2 fs-4"></i>
+    <a href="#" class="text-decoration-none">Correo</a>
+  </li>
+
+  <li class="d-flex align-items-center">
+    <i class="bi bi-linkedin me-2 fs-4"></i>
+    <a href="#" class="text-decoration-none">LinkedIn</a>
+  </li>
+</ul>
+
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
